@@ -53,3 +53,7 @@ We are expecting to complete the movie system project within a period of 6 weeks
 The programming language that we want to use is python as it is the language that most of the members are experienced at.
 
 Furthermore, the project should represent all the requirements that the client needs, and it must be done as requested.
+
+Alternatives:
+
+The issue of remotely monitoring babies can have a long list of solutions. Not all of them must implement a surveillance system. It can be solved with a fraction of a cost using a simple sound-based device that sends warning when the sound is higher than 100 decibels which means that the baby is crying so the parents can check on him. Another solution could be making a smart bracelet that could check and monitor all aspects of a child's wellbeing. But that could prove costly and timely. So change the approach of solving this problem ever so slightly can have the biggest influence on the entire cost of the project.
