@@ -1,0 +1,20 @@
+@startuml
+
+title Registration System State Diagram
+[*] --> RegistrationSystem
+RegistrationSystem --> Username
+Username --> Password
+Username: Enter Username
+Password: Enter Password
+Password --> Confirmation
+Confirmation --> True : Registration Succesful
+Confirmation --> False
+Confirmation:Enter Password Again
+Password <-- False : Retry
+False --> [*]
+note left
+Exit System 
+end note
+True -> LoginSystem
+
+@enduml
