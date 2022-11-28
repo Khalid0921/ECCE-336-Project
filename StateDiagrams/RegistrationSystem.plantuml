@@ -1,13 +1,13 @@
 @startuml
 
 title Registration System State Diagram
-[*] --> RegistrationSystem
-RegistrationSystem --> Username
+[*] --> PersonalInformation: Register()
+PersonalInformation --> Username
 Username --> Password
 Username: Enter Username
 Password: Enter Password
-Password --> Confirmation
-Confirmation --> True : Registration Succesful
+Password -> Confirmation
+Confirmation --> LoginSystem : Registration Succesful
 Confirmation --> False
 Confirmation:Enter Password Again
 Password <-- False : Retry
@@ -15,6 +15,7 @@ False --> [*]
 note left
 Exit System 
 end note
-True -> LoginSystem
+LoginSystem: Go To Login
+PersonalInformation:Enter Email\nEnter Phone Number
 
 @enduml
